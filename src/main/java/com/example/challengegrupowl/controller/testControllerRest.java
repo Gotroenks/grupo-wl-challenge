@@ -5,7 +5,6 @@ import com.example.challengegrupowl.util.connectionDB;
 
 import org.springframework.web.bind.annotation.*;
 
-import javax.swing.text.html.HTML;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,10 +24,10 @@ public class testControllerRest {
 
     @GetMapping
     public String menu() {
-        return "Para inserir = https://peopleapidigitalinnovationone.herokuapp.com/colaboradores/insert/cpf/nome/item" +
-                "\nPara atualizar = https://peopleapidigitalinnovationone.herokuapp.com/colaboradores/update/nome/item/cpf" +
-                "\nPara excluir = https://peopleapidigitalinnovationone.herokuapp.com/colaboradores/delete/cpf" +
-                "\nPara visualizar = https://peopleapidigitalinnovationone.herokuapp.com/colaboradores/listall";
+        return "Para inserir = https://wlgroupchallenge.herokuapp.com/colaboradores/insert/cpf/nome/item" +
+                "\nPara atualizar = https://wlgroupchallenge.herokuapp.com/colaboradores/update/nome/item/cpf" +
+                "\nPara excluir = https://wlgroupchallenge.herokuapp.com/colaboradores/delete/cpf" +
+                "\nPara visualizar = https://wlgroupchallenge.herokuapp.com/colaboradores/listall";
     }
 
     @GetMapping("/insert/{cpf}/{name}/{item}")
